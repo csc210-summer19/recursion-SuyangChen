@@ -88,7 +88,7 @@ public class ObstacleCourse {
 		}
 		if (course[row][col] != '+') {
 			course[row][col] = TRIED;
-			return findExit(row - 1, col) || findExit(row, col - 1) || findExit(row - 1, col - 1)
+			return findExit(row - 1, col) || findExit(row, col - 1)
 					|| findExit(row + 1, col) || findExit(row, col + 1);
 		}
 		return false;
