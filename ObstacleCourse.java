@@ -79,7 +79,7 @@ public class ObstacleCourse {
 
 		if (row < 0 || col < 0 || row > course.length - 1 || col > course[row].length - 1)
 			return false;
-		if (course[row][col] == '+')
+		if (course[row][col] == '+'||course[row][col] == TRIED)
 			return false;
 		if ((row == 0 || col == 0 || row == course.length - 1 || col == course[row].length - 1)) {
 			foundRow = row;
